@@ -160,6 +160,17 @@
       <div class="card">
         <img src="logo_windows10pro.png" alt="Windows 10 Pro" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
         <h3>✅ Windows 10 Pro</h3>
+<script>
+  const dias = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const hoy = new Date().getDay();
+  let colorWin = hoy >= 6 ? '#ff4444' : '#44ff44';
+  let cantidadWin = hoy >= 6 ? 5 : 15;
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('stock-win10').innerText = cantidadWin;
+    document.getElementById('stock-win10').style.color = colorWin;
+  });
+</script>
+<p style="font-weight:bold;">🧮 Solo <span id="stock-win10">15</span> claves disponibles hoy</p>
         <p class="promo">S/25</p>
         <p class="promo-new">PROMO: S/20</p>
         <p>🔐 Activación por clave</p>
@@ -168,6 +179,16 @@
       <div class="card">
         <img src="logo_office2021.png" alt="Office 2021" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
         <h3>✅ Office Professional Plus 2021</h3>
+<script>
+  const hoy2 = new Date().getDay();
+  let colorOff = hoy2 >= 6 ? '#ff4444' : '#44ff44';
+  let cantidadOff = hoy2 >= 6 ? 5 : 20;
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('stock-off21').innerText = cantidadOff;
+    document.getElementById('stock-off21').style.color = colorOff;
+  });
+</script>
+<p style="font-weight:bold;">🧮 Solo <span id="stock-off21">20</span> claves disponibles hoy</p>
         <p class="promo">S/35</p>
         <p class="promo-new">PROMO: S/30</p>
         <p>📞 Activación por teléfono</p>
@@ -211,12 +232,12 @@
 </main>
   <div class="note">
     ¿Conoces a alguien que necesite activar su sistema? <br>
-    <a class="button" style="margin-top:10px" href="https://wa.me/?text=Activa%20tu%20Windows%20u%20Office%20original%20desde%20S%2F20%20aqui%3A%20https%3A%2F%2Fkeyzoneof.github.io%2Fkeyzone-web%2F">
-💬 Compartir esta página</a>
+    <a class="button" style="margin-top:10px" href="https://wa.me/?text=Activa%20tu%20Windows%20u%20Office%20original%20desde%20S%2F20%20aqui%3A%20https%3A%2F%2Ftuweb.com">💬 Compartir esta página</a>
   </div>
 <div style="position: fixed; bottom: 10px; right: 10px; background: #111; color: #bbb; padding: 10px 15px; font-size: 0.8em; border: 1px solid #00ffff33; border-radius: 8px; max-width: 300px;">
   <strong style="color:#00ffff">📋 Condiciones de cambios</strong><br>
   Los cambios se realizarán únicamente si el cliente proporciona pruebas claras y se comunica de manera oportuna. No se aceptarán solicitudes sin justificación válida o tras un uso prolongado sin reporte.
 </div>
+<script async src="https://cdn.counter.dev/script.js" data-id="5c0df6e0-0129-4b57-80f2-c7da338b14a5" data-utcoffset="-5"></script>
 </body>
 </html>
