@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyzone - Activa tu sistema ya</title>
+  <link rel="icon" href="keyzone_text_only_cropped.png">
+  <style>
+    @keyframes fadeInZoom {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    body {
+      background-image: radial-gradient(circle at center, rgba(0,255,255,0.05), transparent 70%), radial-gradient(circle at left, rgba(153,51,255,0.05), transparent 70%), radial-gradient(circle at right, rgba(255,153,0,0.05), transparent 70%);
+      background-repeat: no-repeat;
+      background-position: center, left center, right center;
+      background-size: 800px 800px, 600px 600px, 600px 600px;
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    header {
+      text-align: center;
+      padding: 30px 15px;
+      background-color: #111;
+      box-shadow: 0 0 12px #00ffff44;
+    }
+    header img {
+      height: 125px;
+      margin-bottom: 10px;
+      animation: glowPulse 4s ease-in-out infinite alternate;
+    }
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      color: #00ffff;
+      text-shadow: 0 0 5px #00ffff88;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+      color: #ffffff;
+    }
+    main {
+      padding: 30px 15px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 30px;
+      color: #00ffff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border: 1px solid #00ffff33;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 8px #00ffff22;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card h3 {
+      color: #00ffff;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    .price, .promo {
+      margin: 0;
+    }
+    .promo {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 0.9em;
+    }
+    .promo-new {
+      color: #00ffcc;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    .card p {
+      margin: 10px 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #25d366;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #25d36688;
+      transition: transform 0.2s;
+    }
+    .button:hover {
+      transform: scale(1.05);
+    }
+    .note {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #aaa;
+    }
+  @keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 5px #00ffff) drop-shadow(0 0 10px #00ffff);
+  }
+  33% {
+    filter: drop-shadow(0 0 10px #9933ff) drop-shadow(0 0 20px #9933ff);
+  }
+  66% {
+    filter: drop-shadow(0 0 10px #ff9900) drop-shadow(0 0 20px #ff9900);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 30px #00ffff);
+  }
+}
+      to {
+        filter: drop-shadow(0 0 15px #00ffff) drop-shadow(0 0 30px #00ffff);
+      }
+    }
+  </style>
+</head>
+<body style="cursor: default;">
+  <nav style="position: sticky; top: 0; background: #0d0d0d; padding: 10px 15px; text-align: center; z-index: 1000; border-bottom: 1px solid #00ffff33;">
+    <a href="#ofertas" style="margin: 0 15px; color: #00ffff; text-decoration: none; font-weight: bold;">🔥 Ofertas HOT</a>
+    <a href="#otros" style="margin: 0 15px; color: #00ffff; text-decoration: none; font-weight: bold;">🛠️ Otros productos</a>
+    <a href="#volumen" style="margin: 0 15px; color: #00ffff; text-decoration: none; font-weight: bold;">💼 Por volumen</a>
+  </nav>
+  <header>
+    <img src="keyzone_text_only_cropped.png" alt="Keyzone logo">
+    <h1>ACTIVA TU SISTEMA HOY</h1>
+    <p>Licencias originales desde <strong>S/20</strong></p>
+  </header>
+  <main>
+    <section style="margin-bottom: 50px; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+      <div style="background:#1a1a1a; padding:15px 20px; border-radius:10px; box-shadow:0 0 10px #00ffff33;">
+        <strong style="color:#00ffff;">🔧 Soporte personalizado</strong><br><span style="color:#ccc; font-size: 0.95em;">Te ayudamos a resolver cualquier duda.</span>
+      </div>
+      
+      <div style="background:#1a1a1a; padding:15px 20px; border-radius:10px; box-shadow:0 0 10px #00ffff33;">
+        <strong style="color:#00ffff;">🔄 Cambios gratuitos</strong><br><span style="color:#ccc; font-size: 0.95em;">Si algo no funciona, lo reemplazamos sin costo.</span>
+      </div>
+      
+    </section>
+    <h2 id="ofertas">🔥 Ofertas HOT</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="logo_windows10pro.png" alt="Windows 10 Pro" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h3>✅ Windows 10 Pro</h3>
+        <p class="promo">S/25</p>
+        <p class="promo-new">PROMO: S/20</p>
+        <p>🔐 Activación por clave</p>
+        <a class="button" href="https://wa.me/51936590740?text=Hola,%20quiero%20comprar%20Windows%2010%20Pro">💬 Comprar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="logo_office2021.png" alt="Office 2021" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h3>✅ Office Professional Plus 2021</h3>
+        <p class="promo">S/35</p>
+        <p class="promo-new">PROMO: S/30</p>
+        <p>📞 Activación por teléfono</p>
+        <a class="button" href="https://wa.me/51936590740?text=Hola,%20quiero%20comprar%20Office%202021">💬 Comprar por WhatsApp</a>
+      </div>
+    </div>
+
+    <h2 id="otros" style="margin-top: 60px">🛠️ Otros productos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="logo_windows11pro.png" alt="Windows 11 Pro" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h3>✅ Windows 11 Pro</h3>
+        <p class="price">S/30</p>
+        <p>🔐 Activación por clave</p>
+        <a class="button" href="https://wa.me/51936590740?text=Hola,%20quiero%20comprar%20Windows%2011%20Pro">💬 Comprar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="logo_office2016.png" alt="Office 2016" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h3>✅ Office Professional Plus 2016</h3>
+        <p class="price">S/25</p>
+        <p>📞 Activación por teléfono</p>
+        <a class="button" href="https://wa.me/51936590740?text=Hola,%20quiero%20comprar%20Office%202016">💬 Comprar por WhatsApp</a>
+      </div>
+      <div class="card">
+        <img src="logo_office2019.png" alt="Office 2019" style="width: 100%; border-radius: 8px; margin-bottom: 10px;">
+        <h3>✅ Office Professional Plus 2019</h3>
+        <p class="price">S/30</p>
+        <p>📞 Activación por teléfono</p>
+        <a class="button" href="https://wa.me/51936590740?text=Hola,%20quiero%20comprar%20Office%202019">💬 Comprar por WhatsApp</a>
+      </div>
+    </div>
+  <section id="volumen" style="margin-top: 80px; padding: 20px; background-color: #111; border-top: 2px solid #00ffff44;">
+  <h2 style="text-align: center; color: #00ffff;">💼 Compras por volumen</h2>
+  <p style="text-align: center; max-width: 700px; margin: 10px auto 30px; color: #ccc;">
+    ¿Eres técnico, tienes un negocio o necesitas múltiples claves? Ofrecemos descuentos especiales por compras mayores. Escríbenos directamente para atención personalizada y precios al por mayor.
+  </p>
+  <div style="text-align: center;">
+    <a class="button" href="https://wa.me/51936590740?text=Hola,%20estoy%20interesado%20en%20compras%20por%20volumen">💬 Contacto directo</a>
+  </div>
+</section>
+</main>
+  <div class="note">
+    ¿Conoces a alguien que necesite activar su sistema? <br>
+    <a class="button" style="margin-top:10px" href="https://wa.me/?text=Activa%20tu%20Windows%20u%20Office%20original%20desde%20S%2F20%20aqui%3A%20https%3A%2F%2Ftuweb.com">💬 Compartir esta página</a>
+  </div>
+<div style="position: fixed; bottom: 10px; right: 10px; background: #111; color: #bbb; padding: 10px 15px; font-size: 0.8em; border: 1px solid #00ffff33; border-radius: 8px; max-width: 300px;">
+  <strong style="color:#00ffff">📋 Condiciones de cambios</strong><br>
+  Los cambios se realizarán únicamente si el cliente proporciona pruebas claras y se comunica de manera oportuna. No se aceptarán solicitudes sin justificación válida o tras un uso prolongado sin reporte.
+</div>
+</body>
+</html>
